@@ -86,6 +86,8 @@
                     <a href="https://forge.laravel.com">Like</a>
                     <a href="https://github.com/laravel/laravel">This?!</a>
                 </div>
+
+                <a href="{{url('asd/hello')}}"><button>Next page!</button></a>
             </div>
         </div>
     </body>
