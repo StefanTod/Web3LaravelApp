@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 
 Route::get('asd/{name}', 'TestContr@test');
+
+Route::get('asd/gpus', 'GpuController@showGpus');
