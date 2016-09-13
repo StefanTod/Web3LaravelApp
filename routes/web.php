@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
-
+*/
 
 Route::get('asd/{name}', 'TestContr@test');
 
-Route::get('gpus', 'GpuController@showGpus');
+Route::get('/', 'GpuController@showLessGpus');

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: SIMPLIFICA;
+    src: url('SIMPLIFICA.ttf');
+}
+
+body{
+    font-family: SIMPLIFICA;
+    font-size: 300%;
+}
+
+.btn-info{
+    font-size:150%;
+}
+
+.image-gpu{
+    width: 100%;
+    height: auto;
+}
+
+.gpu-container{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    background-color: lightgreen;
+    margin-left:2%;
+    margin-top: 2%;
+}
+
+button{
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-gpu-container,.more-button-gpu{
+    margin-top: 3.3%;
+    margin-bottom: 3.3%;
+}
+
+.space{
+    padding-left: 5%;
+}
+
+.navbar-default {
+    background-color: lightgreen;
+}
+
+.name-gpu-p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.release-date-gpu{
+    margin-left:40%;
+}
