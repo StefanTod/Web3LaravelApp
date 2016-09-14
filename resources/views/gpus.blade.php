@@ -76,7 +76,7 @@
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">x</span>
-                    @include('gpu/{id}')
+                    @include('gpu')
                 </div>
 
             </div>

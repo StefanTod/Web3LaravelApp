@@ -30,6 +30,15 @@ p{
     margin-left:2%;
     margin-top: 2%;
 }
+.gpu-container-more{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    background-color: lightgreen;
+    margin-left:2%;
+    margin-top: 2%;
+    padding: 2%;
+}
 
 button{
     width:100%;
@@ -75,7 +84,7 @@ button{
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 2.5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
