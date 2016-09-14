@@ -7,6 +7,9 @@ body{
     font-family: SIMPLIFICA;
     font-size: 300%;
 }
+p{
+    font-weight: bold;
+}
 
 .btn-info{
     font-size:150%;
@@ -43,6 +46,7 @@ button{
 
 .navbar-default {
     background-color: lightgreen;
+    font-weight: bold;
 }
 
 .name-gpu-p{

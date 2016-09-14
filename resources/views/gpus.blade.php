@@ -30,7 +30,7 @@
     </nav>
 </header>
 <div class="container-fluid col-md-8 col-md-offset-2">
-    <h1> GPU INTELLIGENCE || TOP 2 CARDS</h1>
+    <h1> <p>GPU INTELLIGENCE || TOP 2 CARDS</p></h1>
     <hr>
     @foreach($gpus as $gpu)
         @if($gpu->id === 4)
