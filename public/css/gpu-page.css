@@ -1,0 +1,26 @@
+@font-face {
+    font-family: SIMPLIFICA;
+    src: url('SIMPLIFICA.ttf');
+}
+
+body{
+    font-family: SIMPLIFICA;
+    font-size: 250%;
+    background-color: #ebebeb;
+}
+
+p,h1,h3{
+    font-weight: bold;
+    text-align: center;
+}
+
+.gpu-container{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    background-color: lightgreen;
+    margin-left:8%;
+    margin-top: 2%;
+
+}
+

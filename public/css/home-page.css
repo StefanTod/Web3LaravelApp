@@ -6,7 +6,9 @@
 body{
     font-family: SIMPLIFICA;
     font-size: 300%;
+    background-color: #ebebeb;
 }
+hr { border: 0; height: 1px; background: #999999; }
 p{
     font-weight: bold;
 }

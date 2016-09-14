@@ -13,14 +13,15 @@ class GpuController extends Controller
         $gpus = DB::table('gpus')->get();
         return view('gpus', ['gpus' => $gpus]);
     }*/
-    public function gpuByName($name){
-        $gpus = DB::table('gpus')
-            -> where('name', $name)
-            ->first();
+    public function gpuByName($id){
+        $gpu = Gpu::find($id);
+        return view('gpu', array('gpu' => $gpu));
     }
     public function showLessGpus()
     {
         $gpus = DB::table('gpus')->select('id', 'name', 'price', 'release_date')->get();
         return view('gpus', ['gpus' => $gpus]);
     }
+
+
 }

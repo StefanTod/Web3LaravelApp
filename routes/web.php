@@ -19,3 +19,7 @@
 Route::get('asd/{name}', 'TestContr@test');
 
 Route::get('/', 'GpuController@showLessGpus');
+
+Route::get('gpu/{id}', 'GpuController@gpuByName');
+
+Route::get('gpu', 'GpuController@gpuByName');
