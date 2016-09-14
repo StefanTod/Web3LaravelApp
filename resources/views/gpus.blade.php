@@ -30,8 +30,18 @@
     </nav>
 </header>
 <div class="container-fluid col-md-8 col-md-offset-2">
-
+    <h1> GPU INTELLIGENCE || TOP 2 CARDS</h1>
+    <hr>
     @foreach($gpus as $gpu)
+        @if($gpu->id === 4)
+            <div class="row">
+                <div class="advert col-md-12">
+                    <hr>
+                    <p>THERE IS SOME ADVERTISEMENT HERE</p>
+                    <hr>
+                </div>
+            </div>
+        @endif
         <row>
             <div class="gpu-container container col-md-5 ">
                 <div>
@@ -47,7 +57,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="name-gpu col-md-10">
+                        <div class="name-gpu col-md-12">
                             <p class="name-gpu-p">
                                 {{$gpu->name}}
                             </p>
