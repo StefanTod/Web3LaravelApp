@@ -29,6 +29,7 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header>
+<div class="row text-center inner">
 <div class="container-fluid col-md-8 col-md-offset-2">
     <h1> <p>GPU INTELLIGENCE || TOP 2 CARDS</p></h1>
     <hr>
@@ -71,7 +72,7 @@
             </div>
         </row>
             <!-- The Modal -->
-            <div id="myModal{{$gpu->id}}" class="modal">
+           {{-- <div id="myModal{{$gpu->id}}" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -79,12 +80,13 @@
                     @include('gpu')
                 </div>
 
-            </div>
+            </div>--}}
         @endforeach
 
 
 
 </div>
+    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
