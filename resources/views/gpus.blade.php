@@ -72,7 +72,7 @@
             </div>
         </row>
             <!-- The Modal -->
-           {{-- <div id="myModal{{$gpu->id}}" class="modal">
+            <div id="myModal{{$gpu->id}}" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -80,7 +80,7 @@
                     @include('gpu')
                 </div>
 
-            </div>--}}
+            </div>
         @endforeach
 
 
