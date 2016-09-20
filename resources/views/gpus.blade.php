@@ -18,7 +18,14 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">GPU INTELLIGENCE</a>
             </div>
-
+            @if (!Auth::check())
+                <div class="top-right links">
+                    <a href="{{ url('/login') }}">Login</a>
+                    <a href="{{ url('/register') }}">Register</a>
+                </div>
+            @elseif(Auth::check())
+                <a href="{{url('/home')}}">Profile</a>
+            @endif
 
         </div><!-- /.container-fluid -->
     </nav>

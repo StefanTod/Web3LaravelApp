@@ -23,3 +23,7 @@ Route::get('/', 'GpuController@showLessGpus');
 Route::get('gpu/{id}', 'GpuController@gpuByName');
 
 Route::get('gpu', 'GpuController@gpuByName');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+Route::get('/profile', 'UsersController@UserProfile');
