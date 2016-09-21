@@ -30,6 +30,7 @@
     </nav>
 </header>
 
+<!--Errors/ Success when posting-->
 @if(count($errors) > 0)
     <div class="row">
         <div class="col-md-6 col-md-offset-3 alert">
@@ -54,6 +55,7 @@
     </div>
     @endif
 
+<!--Comment only if logged in-->
 @if(Auth::check())
     <section class="row new-comment">
         <div class="col-md-6 col-md-offset-3">
@@ -86,7 +88,7 @@
         <br>
 
 
-        <!-- foreach starts here -->
+        <!-- foreach for comments starts here -->
         @foreach($comments as $comment)
         <div class="row">
             <div class="col-sm-1 col-sm-offset-3">

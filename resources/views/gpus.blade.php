@@ -67,7 +67,7 @@
                     </div>
                     <div class="row">
                         <div class="price-gpu col-md-2"><p>{{$gpu->price}}$</p></div>
-                        <a href="{{url('comments/2')}}"><button>Next page!</button></a>
+                        <a href="{{url('comments/2')}}"><button>Comments</button></a>
                         <div class="release-date-gpu col-md-4 "><p>{{$gpu->release_date}}</p></div>
                     </div>
                 </div>
