@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Gpu;
 use App\Http\Controllers\Controller;
 use DB;
-
+use Auth;
 class GpuController extends Controller
 {
   /*  public function showGpus()
@@ -22,5 +22,8 @@ class GpuController extends Controller
         $gpus = DB::table('gpus')->select('id', 'name', 'price', 'release_date', 'specs', 'reviews')->get();
         return view('gpus', ['gpus' => $gpus]);
     }
-
+    public function Logout(){
+        Auth::logout(); // log the user out of our application
+        return back();
+    }
 }

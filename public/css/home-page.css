@@ -5,7 +5,7 @@
 
 body{
     font-family: SIMPLIFICA;
-    font-size: 300%;
+
     background-color: #ebebeb;
 }
 hr { border: 0; height: 1px; background: #999999; }
@@ -13,6 +13,9 @@ p{
     font-weight: bold;
 }
 
+.inner{
+    font-size: 200%;
+}
 .btn-info{
     font-size:2vw;
 }
@@ -53,11 +56,6 @@ button{
 
 .space{
     padding-left: 5%;
-}
-
-.navbar-default {
-    background-color: lightgreen;
-    font-weight: bold;
 }
 
 .name-gpu-p{
@@ -103,4 +101,12 @@ button{
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+.commentsbuttonsize{
+    margin-left: 5%;
+    margin-right:5%;
+}
+.commentsbutton{
+    color:green;
+    font-weight:bold;
 }
