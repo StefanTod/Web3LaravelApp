@@ -40,3 +40,27 @@ body{
     background-color: lightgreen;
     font-weight: bold;
 }
+.new-comment{
+    padding:16px 0;
+    border-top: 1px solid #ccc;
+}
+.new-comment header{
+    margin-bottom:20px;
+}
+.btn-primary{
+    color: black;
+    background-color: lightgreen;
+    border-color: green;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: green;
+    border-color: darkgreen;
+}
+.alert{
+    text-align:center;
+    color:green;
+}
+.right{
+    float:right;
+}

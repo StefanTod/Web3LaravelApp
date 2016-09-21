@@ -26,4 +26,18 @@ Route::get('gpu', 'GpuController@gpuByName');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
 Route::get('/profile', 'UsersController@UserProfile');
+
+Route::get('comments/{id}', 'CommentController@commentsWithGpu');
+
+Route::post('/createcomment',[
+    'uses' => 'CommentController@postCreateComment',
+    'as' => 'comment.create'
+]);
+
+Route::get('/delete-comment/{comment_id}', [
+    'uses' => 'CommentController@getCommentDelete',
+    'as' => 'comment.delete',
+    'middleware' =>'auth'
+]);
