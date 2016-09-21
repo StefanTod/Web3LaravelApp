@@ -82,7 +82,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 ">
-                <h3>Comments for 2</h3>
+                <h3>Comments for {{$firstGpu->name}}</h3>
             </div><!-- /col-sm-12 -->
         </div><!-- /row -->
         <br>
@@ -113,8 +113,13 @@
         </div><!-- /row -->
         @endforeach
         <!-- foreach ends here-->
-
-
+        
+        <!-- if there are no comments -->
+@if($counter == 0)
+        <div class="alert alert-warning">
+            <strong>!</strong> No comments have been posted yet <strong>!</strong>
+        </div>
+    @endif
     </div><!-- /container -->
 </div>
 </body>

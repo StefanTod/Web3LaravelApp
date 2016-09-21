@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Comment;
+use App\Gpu;
 use DB;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Html\FormFacade;
@@ -15,7 +16,10 @@ class CommentController extends Controller
        $comments = Comment::where('gpu_id', $id)
            ->orderBy('created_at', 'desc')
            ->get();
-       return view('comment', array('comments' => $comments, 'gpu_id' => $gpu_id));
+       $firstGpu = Gpu::where('id', $id)
+           ->first();
+       $counter = DB::table('comments')->where('gpu_id', $id)->count();
+       return view('comment', array('comments' => $comments, 'gpu_id' => $gpu_id, 'firstGpu' => $firstGpu, 'counter' => $counter));
    }
 
    public function postCreateComment(Request $request){
@@ -35,6 +39,7 @@ class CommentController extends Controller
        // must implement error messages
        return back()->with(['message' => $message]);
    }
+
    public function getCommentDelete($commentId){
        $comment = Comment::where('id', $commentId)->first();
        if(Auth::user() != $comment->user){

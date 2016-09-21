@@ -23,5 +23,4 @@ class GpuController extends Controller
         return view('gpus', ['gpus' => $gpus]);
     }
 
-
 }

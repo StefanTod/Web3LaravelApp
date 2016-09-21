@@ -29,7 +29,10 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/profile', 'UsersController@UserProfile');
 
-Route::get('comments/{id}', 'CommentController@commentsWithGpu');
+Route::get('comments/{id}', [
+   'uses' => 'CommentController@commentsWithGpu',
+    'as' => 'comments'
+]);
 
 Route::post('/createcomment',[
     'uses' => 'CommentController@postCreateComment',
