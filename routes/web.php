@@ -44,3 +44,7 @@ Route::get('/delete-comment/{comment_id}', [
     'as' => 'comment.delete',
     'middleware' =>'auth'
 ]);
+Route::get('logout', [
+    'uses' => 'GpuController@Logout',
+    'as' => 'logout'
+]);

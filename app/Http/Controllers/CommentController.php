@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Comment;
 use App\Gpu;
 use DB;
+use Auth;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Html\FormFacade;
 

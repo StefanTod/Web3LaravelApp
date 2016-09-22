@@ -1,0 +1,13 @@
+@font-face {
+    font-family: SIMPLIFICA;
+    src: url('SIMPLIFICA.ttf');
+}
+.navbar-default {
+    font-family: SIMPLIFICA;
+    font-size: 300%;
+    background-color: lightgreen;
+    font-weight: bold;
+}
+.top-right{
+    float:right;
+}

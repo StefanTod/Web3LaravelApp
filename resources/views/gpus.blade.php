@@ -7,29 +7,13 @@
     <meta name="description" content="${2}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/home-page.css">
+    <link rel="stylesheet" type="text/css" href={{URL::to('css/home-page.css')}}>
+    <link rel="stylesheet" type="text/css" href={{URL::to('css/header.css')}}>
 
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-default ">
-        <div class="container-fluid col-md-11 col-md-offset-1">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">GPU INTELLIGENCE</a>
-            </div>
-            @if (!Auth::check())
-                <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/register') }}">Register</a>
-                </div>
-            @elseif(Auth::check())
-                <a href="{{url('/profile')}}">Profile</a>
-            @endif
+@include('header')
 
-        </div><!-- /.container-fluid -->
-    </nav>
-</header>
 <div class="row text-center inner">
 <div class="container-fluid col-md-8 col-md-offset-2">
     <h1> <p>GPU INTELLIGENCE || TOP 2 CARDS</p></h1>
@@ -67,8 +51,8 @@
                     </div>
                     <div class="row">
                         <div class="price-gpu col-md-2"><p>{{$gpu->price}}$</p></div>
-                        <a href="{{route('comments', ['gpu_id' => $gpu->id])}}"><button>Comments</button></a>
-                        <div class="release-date-gpu col-md-4 "><p>{{$gpu->release_date}}</p></div>
+                       <div class="commentsbuttonsize"> <a href="{{route('comments', ['gpu_id' => $gpu->id])}}"><button class="commentsbutton">Comments</button></a></div>
+                        <div class="release-date-gpu col-md-10"><p>{{$gpu->release_date}}</p></div>
                     </div>
                 </div>
             </div>
