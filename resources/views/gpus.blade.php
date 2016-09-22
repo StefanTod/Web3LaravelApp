@@ -12,7 +12,6 @@
 
 </head>
 <body>
-
 @include('header')
 
 <div class="row text-center inner">
