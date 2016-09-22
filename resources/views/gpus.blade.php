@@ -24,7 +24,7 @@
                     <a href="{{ url('/register') }}">Register</a>
                 </div>
             @elseif(Auth::check())
-                <a href="{{url('/home')}}">Profile</a>
+                <a href="{{url('/profile')}}">Profile</a>
             @endif
 
         </div><!-- /.container-fluid -->
