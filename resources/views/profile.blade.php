@@ -2,6 +2,6 @@
 
 @section('content')
     <div>
-        <h1>Zdr bepce {{$user->name}}</h1>
+        <h1>Zdr bepce {{$user->name}} {{$user->id}} </h1>
     </div>
 @endsection

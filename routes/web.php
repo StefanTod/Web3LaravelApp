@@ -18,7 +18,7 @@
 
 Route::get('asd/{name}', 'TestContr@test');
 
-Route::get('/', 'GpuController@showLessGpus');
+
 
 Route::get('gpu/{id}', 'GpuController@gpuByName');
 
@@ -27,7 +27,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/profile', 'UsersController@UserProfile');
+
+
 
 Route::get('comments/{id}', [
    'uses' => 'CommentController@commentsWithGpu',
@@ -48,3 +49,47 @@ Route::get('logout', [
     'uses' => 'GpuController@Logout',
     'as' => 'logout'
 ]);
+
+Route::group(['middleware' => 'web'], function () {
+
+    Route::get('/vip', [
+        'uses' => 'AppController@getAuthorPage',
+        'as' => 'vip',
+        'middleware' => 'roles',
+        'roles' => ['Admin', 'Vip', 'Mod']
+    ]);
+    Route::get('/admin', [
+        'uses' => 'AppController@getAdminPage',
+        'as' => 'admin',
+        'middleware' => 'roles',
+        'roles' => ['Admin']
+    ]);
+    Route::post('/admin/assign-roles', [
+        'uses' => 'AppController@postAdminAssignRoles',
+        'as' => 'admin.assign',
+        'middleware' => 'roles',
+        'roles' => ['Admin']
+    ]);
+    Route::get('/register', [
+        'uses' => 'AuthController@getSignUpPage',
+        'as' => 'signup'
+    ]);
+    Route::post('/register', [
+        'uses' => 'AuthController@postSignUp',
+        'as' => 'signup'
+    ]);
+    Route::get('/login', [
+        'uses' => 'AuthController@getSignInPage',
+        'as' => 'signin'
+    ]);
+    Route::post('/login', [
+        'uses' => 'AuthController@postSignIn',
+        'as' => 'signin'
+    ]);
+    Route::get('/logout', [
+        'uses' => 'AuthController@getLogout',
+        'as' => 'logout'
+    ]);
+    Route::get('/profile', 'UsersController@UserProfile');
+    Route::get('/', 'GpuController@showLessGpus');
+});

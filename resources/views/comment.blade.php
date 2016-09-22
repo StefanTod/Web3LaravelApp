@@ -92,8 +92,10 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <strong>{{$comment->user->name}}</strong> <span class="text-muted">{{$comment->created_at}}</span>
-                      @if(Auth::user() == $comment->user)
+                      @if(Auth::user())
+                        @if(Auth::user() == $comment->user || Auth::user()->hasRole('Admin'))
                         <a class="btn right alert" href="{{route('comment.delete', ['comment_id' => $comment->id])}}"><button>Delete</button></a>
+                          @endif
                           @endif
                     </div>
                     <div class="panel-body">

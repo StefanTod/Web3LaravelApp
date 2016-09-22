@@ -12,7 +12,7 @@
                 </div>
             @elseif(Auth::check())
                 <div class="top-right links">
-                    <a href="{{url('/home')}}">Profile</a>
+                    <a href="{{url('/profile')}}">Profile</a>
                     <a href="{{route('logout')}}">Logout</a>
                 </div>
             @endif
