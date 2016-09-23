@@ -24,6 +24,15 @@
                 <div class="advert col-md-12">
                     <hr>
                     <p>THERE IS SOME ADVERTISEMENT HERE</p>
+                    <div class="resizegif"
+                    <div id="_giphy_tv">
+                    <script>
+                        var _giphy_tv_tag="money";
+                        var g = document.createElement('script'); g.type = 'text/javascript'; g.async = true;
+                        g.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'giphy.com/static/js/widgets/tv.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(g, s);
+                    </script>
+                    </div>
                     <hr>
                 </div>
             </div>

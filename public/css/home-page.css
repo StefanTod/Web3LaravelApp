@@ -110,3 +110,8 @@ button{
     color:green;
     font-weight:bold;
 }
+#_giphy_tv{
+    margin-left:15%;
+    margin-right:15%;
+    border: 2px solid lightgreen;
+}
