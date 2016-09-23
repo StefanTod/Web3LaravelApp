@@ -23,9 +23,21 @@
 </head>
 <body>
 @include('header')
+<div class="container">
     @yield('content')
-
+</div>
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script type="text/javascript">
+    <!--
+    function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+    }
+    //-->
+    </script>
 </body>
 </html>

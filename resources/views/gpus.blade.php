@@ -24,7 +24,7 @@
                 <div class="advert col-md-12">
                     <hr>
                     <p>THERE IS SOME ADVERTISEMENT HERE</p>
-                    <div class="resizegif"
+                    <div class="resizegif">
                     <div id="_giphy_tv">
                     <script>
                         var _giphy_tv_tag="money";

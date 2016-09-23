@@ -11,3 +11,8 @@
 .top-right{
     float:right;
 }
+.smallavatar{
+    max-height:3vw;
+    width:auto;
+    border-radius: 10px 10px 10px 10px;
+}

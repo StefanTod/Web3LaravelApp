@@ -84,7 +84,7 @@
         <div class="row">
             <div class="col-sm-1 col-sm-offset-3">
                 <div class="thumbnail">
-                    <img class="img-responsive user-photo" src={{URL::to('images/avatar.png')}}>
+                    <img class="img-responsive user-photo" src='../images/avatars/{{$comment->user->avatar}}'>
                 </div><!-- /thumbnail -->
             </div><!-- /col-sm-1 -->
 

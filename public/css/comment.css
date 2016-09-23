@@ -76,3 +76,6 @@ body{
     padding-bottom:5%;
     border-radius: 10px 10px 10px 10px;
 }
+.user-photo{
+    border: solid 1px lightgreen;
+}
