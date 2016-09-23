@@ -14,7 +14,7 @@
                 <div class="top-right links">
                     <a href="{{url('/profile')}}">{{Auth::user()->name}}</a>
                     <a href="{{route('logout')}}">Logout</a>
-                    <img class="smallavatar" src="images/avatars/{{Auth::user()->avatar}}">
+                    <img class="smallavatar" src="{{asset('images/avatars')}}/{{Auth::user()->avatar}}" >
                 </div>
             @endif
 
