@@ -30,7 +30,6 @@
         @endif
         <row>
             <div class="gpu-container container col-md-5 ">
-                <div>
                     <div class="row">
                         <div class="image-gpu-container col-md-4">
                             <img src="{{ URL::to('/') }}/images/smallcat.jpg" class="img-rounded image-gpu" alt="Cat pic">
@@ -55,7 +54,6 @@
                         <div class="release-date-gpu col-md-10"><p>{{$gpu->release_date}}</p></div>
                     </div>
                 </div>
-            </div>
         </row>
             <!-- The Modal -->
             <div id="myModal{{$gpu->id}}" class="modal">
