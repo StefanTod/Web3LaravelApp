@@ -64,3 +64,15 @@ body{
 .right{
     float:right;
 }
+.gpuname{
+    background-color: lightgreen;
+    text-align:center;
+    border-radius: 10px 10px 10px 10px;
+}
+.pleaselogin{
+    background-color: tomato;
+    text-align: center;
+    padding-top:5%;
+    padding-bottom:5%;
+    border-radius: 10px 10px 10px 10px;
+}

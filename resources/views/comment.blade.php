@@ -64,14 +64,14 @@
 @else
     <section class="row new-comment">
         <div class="col-md-6 col-md-offset-3">
-            <header><h3>Please Log in to leave a comment</h3></header>
+            <header><h3 class="pleaselogin">Please Log in to leave a comment</h3></header>
         </div>
     </section>
 @endif
 
 <div id="respond">
     <div class="container">
-        <div class="row">
+        <div class="row gpuname">
             <div class="col-sm-10 col-sm-offset-1 ">
                 <h3>Comments for {{$firstGpu->name}}</h3>
             </div><!-- /col-sm-12 -->
