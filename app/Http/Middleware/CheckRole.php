@@ -24,8 +24,7 @@ class CheckRole
             return $next($request);
         }
         if(!$roles){
-            return response("nqma");
-                //$next($request);
+            return $next($request);
         }
         return response("Insufficient permissions", 401);
     }

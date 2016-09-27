@@ -41,7 +41,7 @@
             <div class="gpu-container container col-md-5 ">
                     <div class="row">
                         <div class="image-gpu-container col-md-4">
-                            <img src="{{ URL::to('/') }}/images/smallcat.jpg" class="img-rounded image-gpu" alt="Cat pic">
+                            <img src="{{ URL::to('/') }}/images/gpus/{{$gpu->name}}.jpg" class="img-rounded image-gpu" alt="Cat pic">
                         </div>
                         <div class="image-gpu-container col-md-4">
                             <img src="{{ URL::to('/') }}/images/nvidia.png" class="img-rounded image-gpu" alt="nvidia logo">
