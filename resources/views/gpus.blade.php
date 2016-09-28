@@ -44,7 +44,7 @@
                             <img src="{{ URL::to('/') }}/images/gpus/{{$gpu->name}}.jpg" class="img-rounded image-gpu" alt="Cat pic">
                         </div>
                         <div class="image-gpu-container col-md-4">
-                            <img src="{{ URL::to('/') }}/images/nvidia.png" class="img-rounded image-gpu" alt="nvidia logo">
+                            <img src="{{ URL::to('/') }}/images/{{$gpu->type}}.png" class="img-rounded image-gpu" alt="nvidia logo">
                         </div>
                         <div class="more-button-gpu col-md-4">
                             <button class="btn btn-info" id="myBtn{{$gpu->id}}">MORE</button>

@@ -19,7 +19,7 @@ class GpuController extends Controller
     }
     public function showLessGpus()
     {
-        $gpus = DB::table('gpus')->select('id', 'name', 'price', 'release_date', 'specs', 'reviews')->get();
+        $gpus = DB::table('gpus')->select('id', 'name', 'price', 'type', 'release_date', 'specs', 'reviews')->get();
         return view('gpus', ['gpus' => $gpus]);
     }
     public function Logout(){
