@@ -18,6 +18,7 @@ class GPUS extends Migration
             $table->string('name');
             $table->text('specs');
             $table->string('model');
+            $table->string('type');
             $table->date('release_date');
             $table->double('price', 15, 2);
             $table->text('reviews');
