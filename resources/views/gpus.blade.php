@@ -96,7 +96,7 @@
     }
 
     // Get the <span> element that closes the modal
-    var spanNumber{{$gpu->id}} = {{$gpu->id}} - 2;
+    var spanNumber{{$gpu->id}} = {{$gpu->id}} - 1;
     var span{{$gpu->id}} = document.getElementsByClassName("close")[spanNumber{{$gpu->id}}];
 
     // When the user clicks on <span> (x), close the modal
