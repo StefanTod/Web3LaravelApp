@@ -19,7 +19,7 @@
     <h1> <p>GPU INTELLIGENCE || TOP 2 CARDS</p></h1>
     <hr>
     @foreach($gpus as $gpu)
-        @if($gpu->id === 4)
+        @if($gpu->id === 3)
             <div class="row">
                 <div class="advert col-md-12">
                     <hr>
