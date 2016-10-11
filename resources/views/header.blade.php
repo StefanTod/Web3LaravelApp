@@ -9,9 +9,11 @@
                 <div class="top-right links">
                     <a href="{{ url('/login') }}">Login</a>
                     <a href="{{ url('/register') }}">Register</a>
+                    <a href="{{ url('/getPDF') }}">PDF</a>
                 </div>
             @elseif(Auth::check())
                 <div class="top-right links">
+                    <a href="{{ url('/getPDF') }}">PDF</a>
                     <a href="{{url('/profile')}}">{{Auth::user()->name}}</a>
                     <a href="{{route('logout')}}">Logout</a>
                     <img class="smallavatar" src="{{asset('images/avatars')}}/{{Auth::user()->avatar}}" >

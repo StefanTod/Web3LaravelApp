@@ -92,5 +92,6 @@ Route::group(['middleware' => 'web'], function () {
     ]);
     Route::get('/profile', 'UsersController@UserProfile');
     Route::get('/', 'GpuController@showLessGpus');
+    Route::get('/getPDF','PDFController@getPDF');
 });
 Route::post('profile', 'UsersController@update_avatar');
